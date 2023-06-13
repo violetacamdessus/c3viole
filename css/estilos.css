@@ -1,0 +1,235 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+h3{
+    font-family: 'Poppins';
+    margin: 0; 
+}
+
+nav {
+    color: white;
+    width: 100vw;
+    height: 16vh;
+    background-color: #16ab97;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    justify-content: space-between;
+    /* alineación x, empieza con la y*/
+    position: fixed;
+    background-color:#16ab97;
+    left: 0;
+    top: 40vh;
+    padding: 2vw;
+    width: 100vw;
+}
+
+nav div {
+    display: flex;
+    width: 26%; /*espacio entre home ig y behance*/
+    justify-content: space-between;
+
+}
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 10vw;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    /*espacio entre diferentes filas */
+    height: 100vh;
+    margin-bottom: 40px;
+}
+
+.lightboxOverlay{
+background-color:#fbfafb;
+}
+
+section div {
+    width: 50%;
+}
+
+section div img , video{
+    width: 100%;
+}
+
+header {
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    margin: 20px;
+font-family: Paytone One;
+   
+}
+
+h1,
+header h3,
+nav a,
+header a {
+    line-height: 125%;
+}
+
+nav h1 {
+    font-weight: 500;
+}
+
+header h1 {
+    font-family:'Paytone One';
+
+}
+
+header h3 {
+    text-transform: uppercase;
+    color:#16ab97;
+    letter-spacing: 5px;
+
+}
+
+header p {
+    font-size: 20px;
+}
+
+
+header a,
+nav a {
+    text-transform: capitalize;
+    color: rgb(234, 103, 26);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+nav span {
+    display: none;
+}
+
+/*desaparece menú hamburguesa*/
+
+.icon-menu::before {
+
+    color: white;
+    font-size: 4vw;
+}
+
+span.icon-menu:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+    nav div {
+        width: 50%;
+    }
+
+    main section {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 992px) {
+    section {
+        height: auto;
+    }
+
+    section div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav div {
+        display: none;
+    }
+
+    /*desaparece el grupo de links*/
+
+    nav span {
+        display: inline;
+    }
+
+}
+
+img:hover {
+
+   scale: 1.3;
+ 
+    }
+
+
+ nav a {
+    color: white;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+nav a:hover {
+    color: rgb(234, 103, 26);
+}
+
+header h1.animated-heading {
+    animation: fadeAndScale 2s forwards;
+}
+
+@keyframes fadeAndScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+footer{
+    width: 100%;
+    background-color: rgb(234, 103, 26);
+    height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
